@@ -1,1 +1,73 @@
-<h1>.</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanisha Sarkar's Message</title>
+    <style>
+        /* Background animation */
+        @keyframes backgroundAnimation {
+            0% { background-color: #f0f8ff; }
+            50% { background-color: #d3e4f7; }
+            100% { background-color: #f0f8ff; }
+        }
+
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            animation: backgroundAnimation 5s ease-in-out infinite;
+        }
+
+        /* Box effect */
+        @keyframes boxAnimation {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .message-box {
+            background-color: #ffcccb;
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+            animation: boxAnimation 1.5s ease-out;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .message-box:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            color: #ff6347;
+            font-size: 36px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e8b57;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <h1>Tanisha Sarkar</h1>
+        <p>"Wow, it is very good!"</p>
+    </div>
+
+</body>
+</html>
